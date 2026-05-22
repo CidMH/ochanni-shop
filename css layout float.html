@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Tamplate</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* header {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            width: 30%;
+            background-color: aliceblue;
+            padding: 20px;
+            float: left;
+        }
+
+        nav ul li {
+            list-style: none;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+        article {
+            width: 70%;
+            float: left;
+            padding-left: 50px;
+        } */
+
+
+        header {
+            background-color: gray;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            width: 20%;
+            background-color: aliceblue;
+            padding: 30px;
+            float: left;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        article {
+            width: 70%;
+            float: left;
+            padding-left: 50px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: gray;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css layout float</h1>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will
+        stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML
+        Responsive.)</p>
+    <header>
+        <h1>Cities</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">paris</a></li>
+                <li><a href="#">Tokoy</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+            <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the
+                columns
+                will
+                stack on top of each other.</p>
+            <p>Resize the browser window to see the responsive effect (you will learn more about this in our next
+                chapter -
+                HTML
+                Responsive.)</p>
+        </article>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
